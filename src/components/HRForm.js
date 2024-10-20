@@ -66,7 +66,11 @@ const HRForm = () => {
 
         <div className="form-section">
           <label>Date of Birth*</label>
-          <input type="date" {...register("dob", { required: true })} />
+          <input
+            type="text"
+            {...register("dob", { required: true })}
+            placeholder="DD/MM/YYYY"
+          />
         </div>
 
         <div className="form-section">
